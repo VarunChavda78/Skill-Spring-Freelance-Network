@@ -1,0 +1,292 @@
+
+.App {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #ffff !important;
+    /* background-color: #9EC8B9 !important; */
+    /* background: linear-gradient(117.5deg, rgb(89, 233, 162) 20.5%, rgb(29, 209, 185) 100.2%); */
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  .nav-links a {
+    color: #333;
+    text-decoration: none; /* Removes underline */
+    transition: text-decoration 0.3s ease; /* Adds transition effect */
+  }  
+
+  .new-button {
+    margin-left: 1rem;
+    margin-top: -1rem;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    color: #014339; /* Initial text color */
+    background-color: white; /* Initial background color */
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.new-button:hover {
+    background-color: #2b655c; /* Background color on hover */
+    border-radius: 8px;
+}
+
+  
+  .login-button, .signup-button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-button {
+    background-color: #0f9657 !important;
+    /* color: white !important; */
+  }
+
+  .zero{
+    background-color: #014339;
+    height: 500px;
+    text-align: center;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  /* align-items: center; */
+  }
+
+  .hero-content {
+    text-align: left;
+    margin: 3rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+font-style: italic;
+
+  }
+  
+   .hero-content p {
+    color: #F5F5DC;
+    font-size: 1.3rem !important;
+    margin: 3em auto;
+    /* margin-left: 6rem; */
+    text-align:justify;
+    /* text-indent: 2rem; */
+    max-width: 600px; /* Limiting width for better text alignment */
+    margin-bottom: 3rem; /* Balanced margin */
+    font-family: 'Playfair Display', serif;
+    /* font-variant: small-caps; */
+
+  } 
+
+  .cta-button {
+    padding: 1rem 2rem;
+    background-color: #0f9657;
+    color: #ffffff;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .categories {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .category-item {
+    width: 150px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .testimonials {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-item {
+    width: 300px;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links li {
+    margin: 0 1rem;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .social-media a {
+    margin: 0 0.5rem;
+    color: #fff;
+  }
+  
+
+  /* App.css */
+
+/* General button styles */
+.nav-links {
+  display: flex;
+  gap: -10px; 
+  /* Space between buttons */
+}
+
+
+
+.logout-button {
+  background-color: #069552; /* Red color for logout button */
+  color: white; /* White text color */
+  margin-top: -8px;
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* Remove default border */
+  border-radius: 4px;
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, opacity 0.3s
+}
+
+/* Hover effects */
+.login-button{
+  margin-right: -25px;
+  border-radius: 4px;
+  margin-top: -6px;
+  font-size: medium;
+}
+.signup-button{
+  border-radius: 4px;
+  margin-top: -6px;
+  font-size: medium;
+}
+.login-button:hover, .signup-button:hover, .logout-button:hover {
+  opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.login-button:focus, .signup-button:focus, .logout-button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.logo-image{
+  height: 60px;
+  width: auto;
+  border-radius: 70px;
+}
+
+
+
+
+
+
+/* Card Section */
+.card-section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 70%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card-image {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-description {
+  padding: 2rem;
+  width: 60%;
+}
+
+.card-description h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-description p {
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card-description .cta-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #014339;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-description .cta-button:hover {
+  background-color: #0056b3;
+}
