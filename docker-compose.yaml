@@ -6,7 +6,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "8000:8000"
+      - "8828:8000"
     volumes:
       - ./backend:/app
     depends_on:
@@ -15,7 +15,7 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "3323:3000"
     volumes:
       - ./frontend:/app
       - /app/node_modules
@@ -31,7 +31,7 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5525:5432"
 
 volumes:
   pg_data:
