@@ -169,6 +169,7 @@ const Home = ({ isAuthenticated, handleLogout }) => {
       <section className='zero'>
         <div className='hero-content'>
           <h1>Welcome To <br/> Freelancing Hub <br/> & <br/> Find Your Dream Job..</h1>
+          <h1>Hello Pankaj Sir</h1>
           <p>
           Welcome to Skill Spring Freelance, the ultimate platform for clients and freelancers. Connect, collaborate, and create with ease. Find top talent or your next project in a thriving freelance marketplace.
           </p>
